@@ -1,0 +1,41 @@
+{
+    "name": "laymont/gdcountries",
+    "description": "A description for gdcountries.",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "laymont",
+            "email": "laymont@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laymont\\Gdcountries\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laymont\\Gdcountries\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laymont\\Gdcountries\\GdcountriesServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    }
+}
